@@ -29,6 +29,9 @@
         #url {
             font-size: 1em;
         }
+        a {
+            text-decoration: none;
+        }
         #contact {
             font-size: 1em;
             margin-bottom: 8em;
@@ -73,21 +76,6 @@
             img.addEventListener('load',onImage,false);
           
             img.src = "./img/tablet/Gildens800.jpg";
-        }
-
-        function whichSrc (){
-            if (window.innerHeight > 1599) {
-                return "./img/HD/Gildens233h1600.jpg";
-            } else 
-            if (window.innerHeight < 1599 && window.innerHeight > 1199) {
-                return "./img/tablet/Gildens233w1200.jpg";
-            } else 
-            if (window.innerHeight < 1199 && window.innerHeight > 799) {
-                return "./img/tablet/Gildens233w800.jpg";
-            } else 
-            if (window.innerHeight < 799 && window.innerHeight > 760) {
-                return "./img/tablet/Gildens233w768.jpg";
-            }
         }
 
         function onImage (){
